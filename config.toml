@@ -1,0 +1,21 @@
+BaseUrl= "http://example.com"
+LanguageCode= "en-us"
+Title= "mikearagao"
+paginate = 5
+DisqusShortname = "mikearagao"
+Copyright = "All rights reserved - 2015"
+theme = "casper"
+
+[params]
+  description = "living the code life. web dev addict. crazy about ideas and new technologies. answer by the name of aragão around friends (mother calls me miguel). roger federer. former tennis player. currently under a roof in lisbon. proudly reachable on twitter."
+  cover = "images/cover.jpg"
+  author = "Miguel Aragão"
+  authorlocation = "Lisbon, Portugal"
+  authorwebsite = "http://mikearagao.github.io"
+  bio= "coder. web dev addict. crazy thinker. roger federer."
+  logo = "images/logo.png"
+  googleAnalyticsUserID = "UA-61294491-1"
+  githubName = "mikearagao"
+  twitterName = "mikearagao"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
