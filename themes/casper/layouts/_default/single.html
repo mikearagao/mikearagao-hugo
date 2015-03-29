@@ -106,5 +106,15 @@
   </footer>
 </article>
 
+{{if .Params.postcovercreditslink}}
+  <nav class="photo-credits">
+    {{if .Params.postcovercreditsname}}
+      <p>Photo by: <a class="photo-credits" href="{{ .Params.postcovercreditslink }}" target="_blank">{{ .Params.postcovercreditsname}}</a></p>
+    {{else}}
+      <p>Photo by: <a class="photo-credits" href="{{ .Params.postcovercreditslink }}" target="_blank">no name</a></p>
+    {{end}}
+  </nav>
+{{end}}
+
 </main>
 {{ partial "footer.html" . }}

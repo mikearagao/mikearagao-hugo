@@ -6,4 +6,6 @@ slug = "post-title"
 tags = ["tag1","tag2"]
 image = ""
 comments = true
+postcovercreditslink = ""
+postcovercreditsname = ""
 +++

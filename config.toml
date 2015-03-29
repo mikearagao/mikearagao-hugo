@@ -1,4 +1,4 @@
-BaseUrl= "http://mikearagao.github.com"
+BaseUrl= "/"
 LanguageCode= "en-us"
 Title= "mikearagao"
 paginate = 5
@@ -9,9 +9,11 @@ theme = "casper"
 [params]
   description = "living the code life. web dev addict. crazy about ideas and new technologies. answer by the name of aragão around friends (mother calls me miguel). roger federer. former tennis player. currently under a roof in lisbon. proudly reachable on twitter."
   cover = "images/cover.jpg"
+  coverCreditsLink = "https://www.flickr.com/photos/54346769@N03/"
+  coverCreditsName = "ak_phuong"
   author = "Miguel Aragão"
   authorlocation = "Lisbon, Portugal"
-  authorwebsite = "http://mikearagao.github.io"
+  authorwebsite = "https://mikearagao.github.io"
   bio= "coder. web dev addict. crazy thinker. roger federer."
   logo = "images/logo.png"
   googleAnalyticsUserID = "UA-61294491-1"

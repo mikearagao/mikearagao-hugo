@@ -19,13 +19,13 @@
     <div class="vertical">
         <div class="main-header-content inner">
             {{ if .Site.Params.githubName }}
-                <a class="my-blog-logo" href="https://github.com/{{ .Site.Params.githubName }}">
+                <a class="my-blog-logo" href="https://github.com/{{ .Site.Params.githubName }}" target="_blank">
                 <span class="icon-github" style="color:white;font-size:2em"></span>
                 </a>
             {{end}}
             &nbsp;
             {{ if .Site.Params.twitterName }}
-                <a class="my-blog-logo" href="https://twitter.com/{{ .Site.Params.twitterName }}">
+                <a class="my-blog-logo" href="https://twitter.com/{{ .Site.Params.twitterName }}" target="_blank">
                     <span class="icon-twitter" style="color:white;font-size:2em"></span>
                 </a>
             {{end}}
@@ -50,6 +50,16 @@
     {{ end }}
 
     {{ partial "pagination.html" $paginator }}
+
+    {{if .Site.Params.coverCreditsLink}}
+        <nav class="photo-credits">
+            {{if .Site.Params.coverCreditsName}}
+                <p>Photo by: <a class="photo-credits" href="{{ .Site.Params.coverCreditsLink }}" target="_blank">{{ .Site.Params.coverCreditsName}}</a></p>
+            {{else}}
+                <p>Photo by: <a class="photo-credits" href="{{ .Site.Params.coverCreditsLink }}" target="_blank">no name</a></p>
+            {{end}}
+        </nav>
+    {{end}}
 
 </main>
 

@@ -42,6 +42,16 @@
 	{{ end }}
 
 	{{ partial "pagination.html" $paginator }}
+
+  {{if .Site.Params.coverCreditsLink}}
+      <nav class="photo-credits">
+          {{if .Site.Params.coverCreditsName}}
+              <p>Photo by: <a class="photo-credits" href="{{ .Site.Params.coverCreditsLink }}" target="_blank">{{ .Site.Params.coverCreditsName}}</a></p>
+          {{else}}
+              <p>Photo by: <a class="photo-credits" href="{{ .Site.Params.coverCreditsLink }}" target="_blank">no name</a></p>
+          {{end}}
+      </nav>
+  {{end}}
 </main>
 
 
